@@ -1,5 +1,4 @@
 ##1.Merges the training and the test sets to create one data set.
-Data_Merge()<-function(){
   #preparation:use read.table library and get the directory;
     library (read.table)
     dir<-getwd()
@@ -30,7 +29,6 @@ Data_Merge()<-function(){
   #finally, merging all data together; 
     dataset <- rbind(train_data,test_data)
     return (all_data)
-}
 
 ##2.Extracts only the measurements on the mean and standard deviation for each measurement. 
     path <- paste(dir, "/features.txt", sep="")
